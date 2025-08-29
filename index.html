@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Android Rooting 2025 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <h1>Android Rooting in 2025</h1>
+    <p>Everything you need to know</p>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#why-root">Why Root?</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#steps">Step-by-Step</a></li>
+      <li><a href="#risks">Risks</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Main Layout (Grid) ===== -->
+  <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Quick Links</h2>
+      <ul>
+        <li>Magisk 28+</li>
+        <li>ADB & Fastboot</li>
+        <li>Boot.img Extraction</li>
+        <li>Knox & SafetyNet</li>
+      </ul>
+    </aside>
+
+    <!-- Main Article -->
+    <article class="content">
+      <h2 id="why-root">Why Root Android in 2025?</h2>
+      <p>Rooting still unlocks powerful perks: full backups via <strong>Swift Backup</strong>, system-wide ad-blocking with <strong>AdAway</strong>, and deep automation through <strong>Tasker</strong>. In 2025, <em>Magisk 28+</em> remains the gold-standard—systemless, modular, and able to hide root from banking apps with Zygisk+DenyList.</p>
+
+      <h2 id="tools">Essential 2025 Toolkit</h2>
+      <ul>
+        <li><strong>Platform-Tools r35</strong> (ADB/Fastboot)</li>
+        <li><strong>Magisk 28.x</strong> (GitHub APK)</li>
+        <li><strong>mtkclient</strong> (MTK devices)</li>
+        <li><strong>Odin 3.14.1</strong> (Samsung)</li>
+      </ul>
+
+      <h2 id="steps">Simplified 10-Step Guide</h2>
+      <ol>
+        <li>Unlock bootloader (fastboot flashing unlock).</li>
+        <li>Download & extract <em>boot.img</em> matching your exact firmware.</li>
+        <li>Install Magisk → “Select & patch a file” → pick boot.img.</li>
+        <li>Flash the resulting <em>magisk_patched.img</em> via fastboot.</li>
+        <li>Reboot → Magisk App prompts → confirm setup → second reboot.</li>
+        <li>Verify with <em>Root Checker</em> & hide root for banking apps.</li>
+      </ol>
+
+      <h2 id="risks">2025 Realities & Risks</h2>
+      <p>Samsung Knox still trips irreversibly. Google’s <em>Play Integrity API</em> blocks some apps even with Zygisk hide. Always back up first—unlocking the bootloader still wipes <strong>all</strong> user data.</p>
+    </article>
+  </main>
+
+  <!-- ===== Card Gallery (Flexbox) ===== -->
+  <section class="gallery">
+    <h2>Device-Specific Tips</h2>
+    <div class="cards">
+      <div class="card">Pixel: Use official factory images & fastboot flash boot.</div>
+      <div class="card">Samsung: Patch <em>AP</em> tar in Magisk → flash via Odin.</div>
+      <div class="card">Xiaomi: Enable “OEM Unlock” + Mi Unlock → follow same boot.img flow.</div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    &copy; 2025 – Rooting
+  </footer>
+
+</body>
+</html>
